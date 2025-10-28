@@ -1,0 +1,164 @@
+body{
+    background-image: radial-gradient(circle, #004464, rgb(54, 126, 219));
+}
+/* Animação de Cabeçalho */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveHeader {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    .titulo_subtitulo {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo_subtitulo {
+        width: 90%;
+    }
+}
+.titulo_subtitulo{
+    padding: 30px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    animation: slideDown 1s ease-in-out;
+}
+.titulo_subtitulo h1{
+    margin-left: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 44px;
+    font-family: fantasy;
+    width: 100px; 
+    height: 100px;
+}.titulo_subtitulo p{
+    font-family: Arial, Cooper Black;
+    margin-left: 30px;
+    color: white;
+}
+.titulo_subtitulo a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    font-size: 10px;
+    font-family: arial black;
+}
+.titulo_subtitulo a:hover {
+    background-color: #589cf5;
+    border-radius: 4px;
+    color: white;
+}
+nav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 20px 20px 20px;
+}
+
+nav a {
+    
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 5px 5px;
+    margin: 0 15px;
+    font-size: 16px;
+    font-family: arial;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #589cf5;
+    border-radius: 4px;
+    color: white;
+}
+.fundo{
+    background-image: url("neon-mask-and-hoodie-hacker-4k-8ql2siu50iammtqy.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    border-radius: 20px;
+    border-color: #ffffff;
+}
+.sobre_nos h2{
+    color: white;
+    font-family: cursive, fantasy;
+    margin-left: 30px;
+}
+.sobre_nos p{
+    color: white;
+    margin-left: 30px;
+}
+.sobre_nos a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    font-size: 10px;
+    font-family: arial black;
+}
+.sobre_nos a:hover {
+    background-color: #589cf5;
+    border-radius: 4px;
+    color: white;
+}
+.sobre_nos{
+    padding: 30px 0;
+    background-color: #004464;
+    position:relative;
+    color: white;
+    font-family: arial;
+    border-radius: 20px 20px;
+}
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    padding-left: 202px;
+}
+.galeria img{
+    
+    margin-left: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    cursor: pointer;
+    border-radius: 80px 80px;
+    transition: transform 0.3s;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.galeria img:hover{
+    transform: scale(1.05);
+}
